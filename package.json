@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "npm run build",
-    "build": "mkdir dist && pbjs -t static-module -w es6 -l --es6 src/**/*.proto -o dist/index.js"
+    "build": "mkdir dist && pbjs -t static-module -w commonjs src/**/*.proto -o dist/index.js"
   },
   "author": "",
   "license": "ISC",
