@@ -1,0 +1,16 @@
+{
+  "name": "AdvertorProtobuf",
+  "version": "1.0.0",
+  "description": "Protobuf repo",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "mkdir dist && pbjs -t static-module -w es6 -l --es6 src/**/*.proto -o dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "make-dir-cli": "^2.0.0",
+    "protobufjs": "^6.8.8"
+  }
+}
